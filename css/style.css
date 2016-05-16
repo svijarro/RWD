@@ -37,9 +37,22 @@ body {
   text-transform: uppercase;
 }
 
+.fchar { 
+    padding: 50px;
+    border:1px solid #ccc;
+	font-weight:bold;
+	color: red;
+	background:#d0d0d0;
+	font-size:20px;
+	line-height:1.5;
+	text-align:center;
+
+}
+
 p {
   font-size: 16px;
   line-height: 1.5;
+    margin-bottom: 25px;
 }
 
 .sec-about a {
@@ -49,11 +62,7 @@ p {
 .sec-services h2,
 .sec-services p {
   font-weight: 300;
-  text-align: center;
-}
-
-.sec-testimonials p {
-  font-style: italic;
+  text-align: center;    
 }
 
 .sec-contact .btn {
@@ -63,6 +72,27 @@ p {
 .soc-media-ul a {
   text-align: center;
   text-decoration: none;
+}
+
+#folio img{
+    align-items: center;
+    position: relative;
+    display: block;
+    border: none;
+    max-width: 100%;
+    padding: 3em;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+#folio img:hover {
+    z-index: 2;
+    transition: all .75s ease-in;
+    transform: scale(1.5);
+    margin-top: 3em;
+    margin-bottom: 2em;
+    
+}
 }
 
 /*=Base=*/
@@ -94,7 +124,8 @@ hr {
 /*=Module=*/
 /*=Layout=*/
 .sec-folio .row {
-  margin-bottom: 3em;
+  margin-bottom: 1em;
+
 }
 
 /*Header*/
@@ -108,18 +139,18 @@ hr {
 
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
-  color: #ad0000;
+  color: #66CDAA;
 }
 
 .navbar-default .navbar-nav > li > a:active {
-  color: #940000;
+  color: #fff;
 }
 
 /*Main*/
 .sec-main {
   position: relative;
   height: 560px;
-  background: url(http://www.2minds.co.il/wp-content/uploads/hero4.jpg) no-repeat center center;
+  background: url(https://upload.wikimedia.org/wikipedia/commons/b/bc/Wedge_Newport_Hurricane_Marie_photo_D_Ramey_Logan.jpg) no-repeat center center;
   background-size: cover;
 }
 
@@ -141,7 +172,7 @@ hr {
   color: #000;
 }
 .sec-about a:hover, .sec-about a:focus {
-  color: #ad0000;
+  color: #66CDAA;
 }
 
 /*Services*/
@@ -167,29 +198,25 @@ hr {
   margin: 1em 0;
 }
 
-/*Testimonials*/
-.sec-testimonials {
-  background: #f9f9f9;
-}
 
 /*Contact*/
 .sec-contact .form-control:focus {
-  border-color: #ad0000;
+  border-color: #fff;
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(173, 0, 0, 0.6);
 }
 
 .sec-contact .btn {
-  background: #000;
+  background: #777;
   color: #fff;
 }
 .sec-contact .btn:hover, .sec-contact .btn:focus {
-  background: #ad0000;
-  border-color: #7a0000;
+  background: #fff;
+  border-color: #fff;
 }
 
 /*Footer*/
 footer {
-  background: #000;
+  background: #f9f9f9;
 }
 
 .soc-media-ul {
@@ -204,16 +231,17 @@ footer {
 }
 
 .soc-media-ul li:not(:first-child) a {
-  margin-left: 1em;
+  margin-left: .70em;
 }
 
 .soc-media-ul a {
   padding: 0.35em 0;
   width: 1.85em;
-  color: #fff;
+  color: #777;
   border-radius: 50%;
   border: 2px solid;
+  margin-bottom: 30px;    
 }
 .soc-media-ul a:hover, .soc-media-ul a:focus {
-  color: #ad0000;
+  color: #66CDAA;
 }

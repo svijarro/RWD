@@ -6,3 +6,10 @@ $(function() {
     }, 750);
   });
 });
+
+$('.tabs').tabslet({
+  controls: {
+    prev: '.prev',
+    next: '.next'
+  }
+});
