@@ -7,9 +7,5 @@ $(function() {
   });
 });
 
-$('.tabs').tabslet({
-  controls: {
-    prev: '.prev',
-    next: '.next'
-  }
-});
+
+$('.char').lettering('words');
